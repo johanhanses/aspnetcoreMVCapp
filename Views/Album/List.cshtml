@@ -1,0 +1,7 @@
+﻿@model AlbumsListViewModel;
+
+@*<h1>@Model.CurrentCategory</h1>*@
+@foreach (var album in Model.Albums)
+{
+    <partial name="_AlbumCard" model="album" />
+}
